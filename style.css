@@ -1,0 +1,503 @@
+/* ======================================================= */
+/* ASOSIY CSS QISMI (Notification uchun yangilangan) */
+/* ======================================================= */
+
+/* Asosiy Ranglar: Yashil #00b533, Sariq #ffcc19, Qizil #dc3545 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f0f3f5;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    border: 2px solid rgb(153, 153, 153) ;
+    box-shadow: 0 2px 4px inset rgba(0, 0, 0, 0.846);
+}
+
+input {
+    border: none;
+    outline: none;
+    color: #363636;
+}
+
+
+h1,
+h2 {
+    color: #00b;
+    border-bottom: 2px solid #00b5331a;
+    padding-bottom: 10px;
+}
+
+.student-row {
+    display: flex;
+    border-bottom: 3px dashed #373737;
+    margin: 15px 0 4px 0;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 4px inset rgb(0, 0, 0);
+    border: 2px solid rgb(153, 153, 153);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.student-name {
+    width: 225px;
+    font-weight: 600;
+    color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+    color: rgb(48, 48, 48);
+    box-shadow: 0 2px 4px inset rgb(0, 0, 0);
+    border: 2px solid rgb(153, 153, 153);
+    height: 35px;
+}
+
+
+.actions button {
+    padding: 8px 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 2px 4px inset rgb(0, 0, 0);
+    border: 2px solid transparent;
+
+
+}
+
+.actions button:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4),
+        inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    box-shadow: 0 2px 4px inset rgba(0, 0, 0, 0.846);
+    border: 2px solid transparent !important;
+}
+
+
+.actions .present {
+    background-color: #00b533;
+}
+
+.actions .present:hover {
+    background-color: #008033;
+}
+
+.actions .late {
+    background-color: #ffcc19;
+    color: #212529;
+}
+
+.actions .late:hover {
+    background-color: #e6b800;
+}
+
+.actions .absent {
+    background-color: #dc3545;
+}
+
+.actions .absent:hover {
+    background-color: #b02a37;
+}
+
+.extra-input {
+    margin-left: 20px;
+    min-width: 400px;
+    display: none;
+}
+
+/* STATUS BADGE STILI */
+.status-badge {
+    border-radius: 8px;
+    font-size: 0.85em;
+    font-weight: bold;
+    width: 253px;
+    height: 35px;
+    min-width: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 4px inset rgba(0, 0, 0, 0.846);
+}
+
+.status-badge.keldi {
+    background-color: #d8f5e2;
+    color: #008033;
+}
+
+.status-badge.kechqoldi {
+    background-color: #ffeeb5;
+    color: #cc9900;
+}
+
+.status-badge.kelmadi {
+    background-color: #ffc2c2;
+    color: #dc3545;
+}
+
+/* NOMALUM STATUSI */
+.status-badge.nomalum {
+    background-color: #acdbfb;
+    color: #0088ff;
+}
+
+#lesson-selection {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f8f8f8;
+    border: 2px solid rgb(153, 153, 153);
+    box-shadow: 0 2px 4px inset rgba(0, 0, 0, 0.846);
+}
+
+#lesson-selection p {
+    font-weight: bold;
+    color: #00b;
+    margin-bottom: 10px;
+}
+
+#lesson-selection button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #00b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#lesson-selection button:hover {
+    background-color: #00b533;
+}
+
+#attendance-section {
+    display: none;
+}
+
+
+/* Yakunlash tugmasi */
+.save-button {
+    background-color: #00b533 ;
+    color: white ;
+    border: none ;
+    border-radius: 8px ;
+    cursor: pointer;
+    font-size: 1.1em ;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 181, 51, 0.4);
+    width: 40%;
+    height: 42px;
+    border: 2px solid #00b533 ;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px inset rgba(0, 0, 0, 0.846);
+}
+
+.save-button:hover {
+    background-color: #008033 !important;
+}
+
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dc3545;
+    background-color: #fcebeb;
+    border-radius: 6px;
+}
+
+/* MODAL CSS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 30px;
+    height: auto;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    animation: slideIn 0.3s;
+    border: 2px solid rgb(153, 153, 153);
+    box-shadow: 0 2px 4px inset rgba(0, 0, 0, 0.846);
+}
+#reasonInput{
+    border: 2px solid rgb(153, 153, 153);
+    box-shadow: 0 2px 4px inset rgba(0, 0, 0, 0.846);  
+}
+.modal-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00b533;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.modal-body button {
+    background-color: #00b533;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.2s;
+}
+
+.modal-body button:hover {
+    background-color: #008033;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+/* Orqaga Qaytish Tugmasi Stili */
+#go-back-button {
+    background-color: #26a49d;
+    color: white;
+    width: 162px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#go-back-button:hover {
+    background-color: #1d7773;
+}
+
+/* Hammasi Keldi Tugmasi Stili */
+#mark-all-present-button {
+    background-color: #00b533;
+    color: white;
+    width: 251px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mark-all-present-button:hover {
+    background-color: #008033;
+}
+
+.toga {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+/* ======================================================= */
+/* YENGI BILDİRİŞNOMA (NOTIFICATION TOAST) STILI */
+/* ======================================================= */
+
+.notification {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    opacity: 0;
+    transition: all 0.5s ease;
+    min-width: 300px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.notification.show {
+    top: 20px;
+    opacity: 1;
+}
+
+/* Ranglar: Success, Error, Info */
+.notification.success {
+    background-color: #00b533;
+}
+
+.notification.error {
+    background-color: #dc3545;
+}
+
+.notification.info {
+    background-color: #ffcc19;
+}
+
+.student-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Media Queries (Responsive) */
+@media screen and (max-width: 1001px) {
+    #mark-all-present-button p {
+        display: none;
+    }
+
+    .save-button {
+        width: 100%;
+    }
+
+
+    .student-row {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .student-info-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .student-name {
+        width: 100%;
+    }
+
+    .status-badge {
+        width: 100%;
+    }
+
+    .present {
+        width: 100%;
+    }
+
+    .late {
+        width: 100%;
+    }
+
+    .absent {
+        width: 100%;
+    }
+
+    .actions {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .actions button {
+        padding: 8px 1px;
+        font-size: 12px;
+    }
+
+    .modal-content {
+        width: 89%;
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+
+
+
+    #mark-all-present-button span {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .container {
+        max-width: 100%;
+        height: 100%;
+    }
+
+}

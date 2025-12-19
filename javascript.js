@@ -45,7 +45,14 @@ const INITIAL_STUDENTS = [
     { id: 19, name: "Temur Jurakulov", status: "Nomalum", reason: "" },
     { id: 20, name: "Temur Turaqulov", status: "Nomalum", reason: "" },
     { id: 21, name: "Faxriddin Tursunov", status: "Nomalum", reason: "" },
-    { id: 22, name: "Yusuf Sodiqov", status: "Nomalum", reason: "" }
+    { id: 22, name: "Yusuf Sodiqov", status: "Nomalum", reason: "" },
+    { id: 23, name: "Mukarramaaziza Odiljonova  ", status: "Nomalum", reason: "" },
+    { id: 24, name: "Botirjon Zokirov", status: "Nomalum", reason: "" },
+
+    
+
+
+
 ];
 
 let students = JSON.parse(JSON.stringify(INITIAL_STUDENTS));

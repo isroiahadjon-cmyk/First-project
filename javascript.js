@@ -47,6 +47,7 @@ const INITIAL_STUDENTS = [
     { id: 21, name: "Yusuf Sodiqov", status: "Nomalum", reason: "" },
     { id: 22, name: "Mukarramaaziza Odiljonova  ", status: "Nomalum", reason: "" },
     { id: 23, name: "Botirjon Zokirov", status: "Nomalum", reason: "" },
+    { id: 24, name: "Shohrux Indaminov", status: "Nomalum", reason: "" },
 
     
 

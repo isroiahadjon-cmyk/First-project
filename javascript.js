@@ -43,11 +43,10 @@ const INITIAL_STUDENTS = [
     { id: 17, name: "Shohjahon Xolmirzayev", status: "Nomalum", reason: "" },
     { id: 18, name: "Shoxdil Shorustamov", status: "Nomalum", reason: "" },
     { id: 19, name: "Temur Jurakulov", status: "Nomalum", reason: "" },
-    { id: 20, name: "Temur Turaqulov", status: "Nomalum", reason: "" },
-    { id: 21, name: "Faxriddin Tursunov", status: "Nomalum", reason: "" },
-    { id: 22, name: "Yusuf Sodiqov", status: "Nomalum", reason: "" },
-    { id: 23, name: "Mukarramaaziza Odiljonova  ", status: "Nomalum", reason: "" },
-    { id: 24, name: "Botirjon Zokirov", status: "Nomalum", reason: "" },
+    { id: 20, name: "Faxriddin Tursunov", status: "Nomalum", reason: "" },
+    { id: 21, name: "Yusuf Sodiqov", status: "Nomalum", reason: "" },
+    { id: 22, name: "Mukarramaaziza Odiljonova  ", status: "Nomalum", reason: "" },
+    { id: 23, name: "Botirjon Zokirov", status: "Nomalum", reason: "" },
 
     
 
